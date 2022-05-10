@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Neucha&display=swap');
+
+*{
+    font-family: 'Neucha', cursive;
+}
+body{
+    background-color: #333333;
+}
+
+header{
+    background-color: #CDD0D2;
+    width: 80%;
+    max-height: 120px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 200px 20px 1px;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+h1{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 5em;
+}
+
+#logo{
+    max-width: 10%;
+    max-height: 15%;
+    margin-left: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    background-color: #CDD0D2;
+    border-radius: 15px;
+    resize: none;
+    width: 80%;
+    height: 500px;
+    font-size: 2em;
+    font-family: 'Neucha', cursive;
+    margin: auto;
+    box-shadow: inset 0px 4px 4px #00000040;
+    margin-bottom: 2%;
+}
+
+textarea:hover{
+    border: #8E99C3 5px solid;
+}
+
+
+.submit-button{
+    background-color: #394984;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow:  inset 5px 0px 30px  #00000040,  inset -5px 0px 30px  #ffffff40;
+    color:#ffffff;
+    border: 0px;
+    margin-left: 80%;
+    font-size: 1.3em;
+}
+
+nav{
+    position: fixed;
+    background-color: #212529;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+.nav-compte{
+    color:#CDD0D2;
+    background-color: #394984;
+    box-shadow: none;
+    font-size: 1.1em;
+    border-radius: 5px 5px 30px 5px;
+    width: 70px;
+    height: 120px;
+    border: 2px solid #333333;
+    box-shadow: 4px 4px #00000040;
+}
+
+.onglet1{
+    position: fixed;
+    z-index: 2;
+}
+
+.onglet2{
+    position:fixed;
+    z-index: 1; 
+    margin-top: 100px;
+}
+
+.onglet3{
+    position:fixed;
+    z-index: 0;
+    margin-top: 200px;
+}
