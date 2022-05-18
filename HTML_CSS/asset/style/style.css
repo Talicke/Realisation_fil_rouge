@@ -11,16 +11,19 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto 75px;
-    grid-template-rows: none;
+    grid-template-rows: auto, auto;
 }
 
 body{
-    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto 75px;
+    grid-template-rows: auto auto;
     background-color: #333333;
 }
 
 header{
     grid-column: 1;
+    grid-row: 1;
     background-color: #CDD0D2;
     width: 80%;
     max-height: 120px;
@@ -36,6 +39,7 @@ header{
 
 h1{
     grid-column: 1;
+    grid-row: 2;
     font-family: 'Cabin Sketch', cursive;
     font-size: 5em;
 }
@@ -45,14 +49,17 @@ h1{
     width: 10%;
 }
 
-form{
+section{
     grid-column: 1;
+    grid-row: 1;
+    margin-top: 35vh;
+}
+form{
     display: flex;
     flex-direction: column;
 }
 
 textarea{
-    grid-column: 1;
     background-color: #CDD0D2;
     border-radius: 15px;
     resize: none;
@@ -84,6 +91,7 @@ textarea:hover{
 
 nav{
     grid-column: 2;
+    grid-row: 1 /2;
     position: relative;
     top:0vh;
     right: 0vh;
